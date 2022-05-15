@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+// -- fields_of_study start 
+
+.title {
+    font-family: $primary-font;
+    text-align: center;
+    font-size: 50px;
+    color: $primary-color;
+    padding: 50px;
+
+    h2 {
+        font-size: 50px;
+        color: $primary-color;
+
+    }
+}
+
+.head {
+    p {
+        span {
+            font-family: $second-font;
+            font-weight: 800;
+            color: $primary-color;
+
+        }
+    }
+}
+
+.slick {
+    margin-top: -55px;
+    min-height: 230px;
+    max-height: 400px;
+}
+
+.graduate-comment {
+    text-align: center;
+    line-height: 1.5;
+    font-family: $primary-font;
+    font-style: italic;
+    font-size: 20px;
+    color: $primary-color;
+    max-width: 81vh;
+    margin: 0 auto;
+
+    p {
+        min-width: 300px;
+    }
+}
+
+.slick-prev,.slick-next {
+
+    background: #03030b;
+    
+}
+
+.graduate-img {
+    margin: 0px 30px;
+
+    img {
+        height: 91px;
+        width: 110px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+}
+
+.graduate-info {
+    display: flex;
+    justify-content: center;
+    font-family: $primary-font;
+    padding: 0 20px;
+    margin-right: 20px;
+
+}
+
+.name {
+    font-family: $second-font;
+    font-weight: 800;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.category {
+    font-family: $primary-font;
+    color: rgb(133, 124, 124);
+    margin-top: -20px;
+}
+// -- fields_of_study end 
+
+#academic-partners {
+    padding: 10px 40px;
+}
+
+.bold-part {
+    font-family: $second-font;
+    color: $primary-color;
+    font-weight: 900;
+    position: relative;
+    top: -138px;
+
+    span {
+        margin: 0 auto;
+
+    }
+
+}
+
+.summary {
+    color: $primary-color;
+    font-family: $primary-font;
+    position: relative;
+    top: -150px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.rainbow-bar {
+    background: rgb(10, 224, 56);
+    background: linear-gradient(90deg, rgba(10, 224, 56, 1) 0%, rgba(11, 73, 146, 1) 17%, rgba(93, 12, 136, 1) 35%, rgba(222, 36, 23, 1) 54%,
+            rgba(215, 124, 18, 1) 71%, rgba(255, 248, 0, 1) 100%);
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+
+.partners {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.partners-logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin: 50px 30px 140px 20px;
+    margin-top: 35px;
+    margin-left: 30px;
+
+    .logo {
+        height: 50px;
+        width: 120px;
+
+        img {
+            width: 189.98px;
+            height: 127.5px;
+
+        }
+    }
+}
+
+
+@media screen and(min-width:1201px) and(max-width:1400px) {
+    .partners-logo {
+        padding: 0 305px;
+        margin-left: 0px;
+        justify-content: space-between;
+
+        .logo {
+            margin: 4.3px;
+        }
+    }
+}
+
+@media screen and(min-width:870px) and(max-width:1200px) {
+    .partners-logo {
+        padding: 0 350px;
+        margin-left: 0px;
+
+        .microsoft-logo {
+            img {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:870px) {
+    .partners-logo {
+        padding: 0;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 50px;
+        margin-top: 25px;
+        margin-left: -50px;
+
+        .bold-part {
+            span {
+                margin-left: -60px;
+            }
+        }
+
+        .logo {
+            img {
+                margin-top: 30px;
+            }
+        }
+
+        .microsoft-logo {
+            img {
+                margin-top: 50px;
+            }
+        }
+    }
+}
